@@ -1,0 +1,36 @@
+.promo {
+  color: #ffffff;
+  outline: 1px solid #000000;
+  padding-bottom: 20px;
+}
+
+.promo__text {
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.promo__title {
+  padding-top: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.promo__slogan {
+  padding-bottom: 200px;
+  margin-bottom: 135px;
+  text-align: center;
+  line-height: 14;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}

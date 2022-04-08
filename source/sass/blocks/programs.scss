@@ -1,0 +1,39 @@
+.programs {
+  outline: 1px solid #000;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 33px;
+  margin-bottom: 20px;
+  background: #F2F2F2;
+}
+
+.programs__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.programs__more {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+}

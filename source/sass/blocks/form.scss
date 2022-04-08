@@ -1,0 +1,61 @@
+.form {
+  outline: 1px solid #000000;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__info {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form__field {
+  outline: 1px solid #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form__field--check {
+  margin-bottom: 15px;
+}
+
+.form__section {
+  margin-bottom: 15px;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__text {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__comment {
+  width: 259px;
+  height: 140px;
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.form__send {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.form__note {
+  text-align: center;
+  color: #000000;
+}
+
+

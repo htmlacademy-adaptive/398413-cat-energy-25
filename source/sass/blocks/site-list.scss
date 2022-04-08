@@ -1,0 +1,16 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  padding: 24px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+}
