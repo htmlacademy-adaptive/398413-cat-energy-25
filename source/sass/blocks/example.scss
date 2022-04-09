@@ -1,0 +1,66 @@
+.example {
+  outline: 1px solid #000000;
+  padding-top: 30px;
+  background: #eaeaea;
+}
+
+.example__title {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+}
+
+.example__wrapper {
+  width: 280px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example__description {
+  margin-bottom: 20px;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.example__field {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__sum {
+  display: block;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.example__img {
+  margin-bottom: 15px;
+}
+
+.example__toggle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
