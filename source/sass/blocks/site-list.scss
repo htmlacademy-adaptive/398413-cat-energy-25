@@ -14,3 +14,38 @@
   font-weight: 700;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    outline: 1px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 438px;
+  }
+
+  .site-list__item {
+    margin-right: 33px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+
+  .site-list--main .site-list__link {
+    color: #ffffff;
+  }
+}

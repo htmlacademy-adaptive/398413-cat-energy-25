@@ -1,0 +1,17 @@
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+    padding-top: 40px;
+  }
+
+  .header--main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(53vw - 40px);
+    height: 696px;
+    background-color: #64a83b;
+    background-size: cover;
+  }
+}
