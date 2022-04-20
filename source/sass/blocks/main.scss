@@ -10,3 +10,21 @@
   font-weight: 400;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title {
+    width: 80%;
+    max-width: 1220px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -83,7 +84,7 @@
           <label class="visually-hidden" for="comment_field">Информация о повадках кота</label>
         </div>
         <div class="form__field form__field--check">
-          <h2 class="form__title">Контактные данные (владельца кота)</h2>
+          <h2 class="form__title">Дополнительно</h2>
           <div class="form__section">
             <input class="form__check" type="checkbox" id="sugar_field" name="sugar" checked="">
             <label class="form__label" for="sugar_field">сахарозаменитель</label>
@@ -101,8 +102,10 @@
             <label class="form__label" for="vitamins_field">витамины</label>
           </div>
         </div>
-        <button class="form__send button" type="submit">отправить заявку</button>
-        <p class="form__note"><sup>*</sup>— Обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="form__send button" type="submit">отправить заявку</button>
+          <p class="form__note"><sup>*</sup>— Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="footer">
