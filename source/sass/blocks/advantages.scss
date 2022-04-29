@@ -23,19 +23,58 @@
 
 .advantages__item {
   outline: 1px solid #000000;
+  position: relative;
   padding-left: 80px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Arial", sans-serif;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-position: center;
+  }
+}
+
+.advantages__item--usefull::after {
+  background-image: url("../img/icon-leaf.svg");
+}
+
+.advantages__item--fast::after {
+  background-image: url("../img/icon-tub.svg");
+}
+
+.advantages__item--easy::after {
+  background-image: url("../img/icon-eat.svg");
+}
+
+.advantages__item--goodly::after {
+  background-image: url("../img/icon-alarm.svg");
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 90%;
+    width: 92%;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 75px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .advantages__list {
@@ -49,16 +88,21 @@
     padding-bottom: 110px;
     padding-left: 0;
     padding-right: 95px;
+    line-height: 24px;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 80%;
     max-width: 1220px;
     padding-left: 30px;
     padding-right: 30px;
-    box-sizing: border-box;
+    padding-top: 42px;
   }
 
   .advantages__list {
@@ -66,7 +110,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
     padding-right: 0;
-    padding-bottom: 50px;
     margin-bottom: 10px;
   }
 

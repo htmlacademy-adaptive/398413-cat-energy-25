@@ -21,8 +21,11 @@
 }
 
 .programs__title {
+  position: relative;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  padding-left: 70px;
   font-size: 24px;
   line-height: 37px;
   color: #111111;
@@ -30,8 +33,42 @@
   text-transform: uppercase;
 }
 
+.programs__title--reduce::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.programs__title--increase::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+}
+
+.programs__title::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
 .programs__description {
   font-family: "Arial", sans-serif;
+  margin-bottom: 40px;
 }
 
 .programs__more {
@@ -45,7 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: 90%;
+    width: 92%;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -53,31 +90,63 @@
   .programs__item {
     padding-left: 55px;
     padding-bottom: 40px;
+    margin-bottom: 28px;
   }
 
   .programs__title {
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 25px;
+    padding-left: 0;
+    margin-bottom: 0;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 65px;
+      left: 63%;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .programs__title--reduce::after {
+    top: 55px;
+    left: 68%;
+    width: 140px;
+    height: 194px;
+    background-size: 140px auto;
+    background-position: center;
+  }
+
+  .programs__title--increase::after {
+    top: 105px;
+    left: 57%;
+    width: 268px;
+    height: 112px;
+    background-size: 268px auto;
+    background-position: center;
   }
 
   .programs__description {
+    margin-top: 0;
     margin-bottom: 50px;
-    width: 60%;
+    width: 55%;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .programs__more {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs {
-    width: 80%;
     max-width: 1220px;
     padding-left: 30px;
     padding-right: 30px;
-    box-sizing: border-box;
   }
 
   .programs__list {
@@ -93,5 +162,35 @@
   .programs__description {
     width: 100%;
     margin-bottom: 22px;
+  }
+
+  .programs__title {
+    padding-left: 160px;
+    padding-top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .programs__title::before {
+    top: -30px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programs__title--reduce::after {
+    top: -35px;
+    left: 10px;
+    width: 70px;
+    height: 97px;
+    background-size: 70px auto;
+  }
+
+  .programs__title--increase::after {
+    top: -5px;
+    left: -20px;
+    width: 134px;
+    height: 56px;
+    background-size: 134px auto;
   }
 }
