@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 280px;
+  width: calc(100% - 40px);
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
