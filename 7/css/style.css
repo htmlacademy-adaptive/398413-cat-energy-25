@@ -104,7 +104,7 @@ input[type=radio].visually-hidden {
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 24px;
+  width: 26px;
   height: 1px;
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 -8px 0 0 #000000;
@@ -126,7 +126,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   top: 0;
   left: -5px;
-  width: 24px;
+  width: 26px;
   height: 2px;
   background-color: #000000;
   transform: rotate(45deg);
@@ -136,7 +136,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   top: 0;
   left: -5px;
-  width: 24px;
+  width: 26px;
   height: 2px;
   background-color: #000000;
   transform: rotate(-45deg);
@@ -144,6 +144,18 @@ input[type=radio].visually-hidden {
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav--nojs .main-nav__logo-wrapper {
+  justify-content: flex-start;
+  /*display: grid;
+  grid-template-columns: 1fr 2fr;*/
+}
+
+.main-nav--nojs .main-nav__logo--img-text {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: -33px;
 }
 
 @media (min-width: 768px) {
@@ -919,6 +931,10 @@ input[type=radio].visually-hidden {
     margin-right: auto;
   }
 
+  .example__container {
+    background-color: #f2f2f2;
+  }
+
   .example__wrapper {
     outline: 1px solid #000000;
     position: relative;
@@ -930,17 +946,6 @@ input[type=radio].visually-hidden {
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #f2f2f2;
-  }
-  .example__wrapper::before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    height: 100%;
-    width: 100vw;
-    transform: translateX(-50%);
-    background-color: #f2f2f2;
-    z-index: 1;
   }
 
   .example__wrapper-text {
@@ -1118,7 +1123,7 @@ input[type=radio].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 280px;
+  width: calc(100% - 40px);
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
