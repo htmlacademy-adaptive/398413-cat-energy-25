@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo main-nav__logo--img-logo">
             <img class="main-nav__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип Кэт Энерджи">
@@ -222,63 +222,65 @@
       </section>
       <section class="add-products">
         <h2 class="add-products__title">Дополнительные товары</h2>
-        <div class="add-products__container">
-          <article class="product product--add">
-            <a class="product__link" href="#">
-              <h3 class="product__name">Сахарозаменитель</h3>
-            </a>
-            <ul class="product__description">
-              <li class="product__item">
-                <p class="product__title">1 упаковка (100 г)</p>
-                <p class="product__param">200 Р.</p>
-              </li>
-            </ul>
-            <a class="product__basket button" href="#">заказать</a>
-          </article>
-          <article class="product product--add">
-            <a class="product__link" href="#">
-              <h3 class="product__name">питьевая вода</h3>
-            </a>
-            <ul class="product__description">
-              <li class="product__item">
-                <p class="product__title">5 литров</p>
-                <p class="product__param">50 Р.</p>
-              </li>
-            </ul>
-            <a class="product__basket button" href="#">заказать</a>
-          </article>
-          <article class="product product--add">
-            <a class="product__link" href="#">
-              <h3 class="product__name">молоко</h3>
-            </a>
-            <ul class="product__description">
-              <li class="product__item">
-                <p class="product__title">1 литр</p>
-                <p class="product__param">100 Р.</p>
-              </li>
-            </ul>
-            <a class="product__basket button" href="#">заказать</a>
-          </article>
-          <article class="product product--add">
-            <a class="product__link" href="#">
-              <h3 class="product__name">витамины</h3>
-            </a>
-            <ul class="product__description">
-              <li class="product__item">
-                <p class="product__title">1 упаковка (30 г)</p>
-                <p class="product__param">300 Р.</p>
-              </li>
-            </ul>
-            <a class="product__basket button" href="#">заказать</a>
-          </article>
-        </div>
-        <a class="add-products__promo" href="#">Закажите все и получите чехол для кота в подарок!</a>
-      </section>
+          <div class="add-products__wrapper">
+            <div class="add-products__container">
+              <article class="product product--add">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">Сахарозаменитель</h3>
+                </a>
+                <ul class="product__description">
+                  <li class="product__item">
+                    <p class="product__title">1 упаковка (100 г)</p>
+                    <p class="product__param">200 Р.</p>
+                  </li>
+                </ul>
+                <a class="product__basket button" href="#">заказать</a>
+              </article>
+              <article class="product product--add">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">питьевая вода</h3>
+                </a>
+                <ul class="product__description">
+                  <li class="product__item">
+                    <p class="product__title">5 литров</p>
+                    <p class="product__param">50 Р.</p>
+                  </li>
+                </ul>
+                <a class="product__basket button" href="#">заказать</a>
+              </article>
+              <article class="product product--add">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">молоко</h3>
+                </a>
+                <ul class="product__description">
+                  <li class="product__item">
+                    <p class="product__title">1 литр</p>
+                    <p class="product__param">100 Р.</p>
+                  </li>
+                </ul>
+                <a class="product__basket button" href="#">заказать</a>
+              </article>
+              <article class="product product--add">
+                <a class="product__link" href="#">
+                  <h3 class="product__name">витамины</h3>
+                </a>
+                <ul class="product__description">
+                  <li class="product__item">
+                    <p class="product__title">1 упаковка (30 г)</p>
+                    <p class="product__param">300 Р.</p>
+                  </li>
+                </ul>
+                <a class="product__basket button" href="#">заказать</a>
+              </article>
+            </div>
+            <a class="add-products__promo" href="#">Закажите все <br> и получите чехол для кота в подарок!</a>
+          </div>
+        </section>
     </main>
     <footer class="footer">
       <section class="contacts">
         <div class="contacts__wrapper">
-          <b class="contacts__content">приглашаем к сотрудничеству дилеров!</b>
+          <b class="contacts__content">приглашаем <br> к сотрудничеству дилеров!</b>
           <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648932540057!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -313,5 +315,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
