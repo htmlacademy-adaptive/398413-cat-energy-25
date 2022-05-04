@@ -104,6 +104,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding-top: 0;
+    background-color: #ffffff;
+  }
+
   .example__title {
     width: 92%;
     padding-left: 30px;
@@ -155,10 +160,14 @@
   }
 
   .example__sum {
-    width: 25%;
+    width: 30%;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .example__sum span {
+    display: block;
   }
 
   .example__img {
@@ -182,14 +191,14 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: #ffffff;
+    padding-top: 15px;
   }
 
   .example__title {
     max-width: 1220px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -201,7 +210,7 @@
   .example__wrapper {
     outline: 1px solid #000000;
     position: relative;
-    max-width: 1220px;
+    width: 1220px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 32px;
@@ -214,7 +223,7 @@
   .example__wrapper-text {
     outline: 1px solid #000000;
     display: block;
-    padding-top: 95px;
+    padding-top: 72px;
     width: 70%;
     z-index: 2;
   }
