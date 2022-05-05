@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -11,7 +14,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo main-nav__logo--img-logo">
-            <img class="main-nav__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип Кэт Энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип Кэт Энерджи">
+            </picture>
           </a>
           <a class="main-nav__logo main-nav__logo--img-text">
             <img class="main-nav__image" src="img/icon-mobile-textlogo.svg" width="101" height="18" alt="логотип Кэт Энерджи">
