@@ -341,29 +341,39 @@ input[type=radio].visually-hidden {
 .promo__text {
   position: relative;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 50%);
+  background-image: linear-gradient(to bottom, transparent 302px, #ffffff 50%), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg"), linear-gradient(to right, #575555, #3f3f3f);
+  background-repeat: no-repeat;
+  background-position: top center;
   /*background-image: url("../img/index-background.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;*/
-}
-.promo__text::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: url("../img/index-background.jpg");
-  background-color: rgba(104, 183, 56, 0.85);
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: 320px auto;
-  background-blend-mode: overlay;
-  opacity: 0.2;
+  /*&::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url("../img/index-background.jpg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-blend-mode: overlay;
+    opacity: 0.2;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before {
+      background-image: url("../img/index-background@2x.jpg");
+    }
+  }*/
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .promo__text::before {
-    background-image: url("../img/index-background@2x.jpg");
+  .promo__text {
+    background-image: linear-gradient(to bottom, transparent 302px, #ffffff 50%), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background@2x.jpg"), linear-gradient(to right, #575555, #3f3f3f);
+    background-size: contain;
   }
 }
 
