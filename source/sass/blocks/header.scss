@@ -4,7 +4,7 @@
     padding-top: 40px;
   }
 
-  .header--main::after {
+  .header--main::before {
     content: "";
     position: absolute;
     top: 0;
@@ -12,6 +12,26 @@
     width: calc(53vw - 40px);
     height: 696px;
     background-color: #64a83b;
+  }
+
+  .header--main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(53vw - 40px);
+    height: 696px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-color: rgba(104, 183, 56, 0.85);
     background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    opacity: 0.2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: auto 696px;
+    }
   }
 }

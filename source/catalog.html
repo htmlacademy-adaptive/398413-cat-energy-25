@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -11,7 +14,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo main-nav__logo--img-logo">
-            <img class="main-nav__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип Кэт Энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип Кэт Энерджи">
+            </picture>
           </a>
           <a class="main-nav__logo main-nav__logo--img-text">
             <img class="main-nav__image" src="img/icon-mobile-textlogo.svg" width="101" height="18" alt="логотип Кэт Энерджи">
@@ -38,7 +45,10 @@
       <section class="main-products">
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/chicken-small.png" alt="куриный корм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/chicken-small.png" srcset="img/chicken-small@2x.png 2x" width="68" height="78" alt="куриный корм">
+            </picture>
           </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
@@ -63,8 +73,12 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/chicken-big.png" alt="куриный корм большой">
-          </a>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="product__img" src="img/chicken-big.png" srcset="img/chicken-big@2x.png 2x" width="84" height="100" alt="куриный корм большой">
+            </picture>
+            </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
               <h2 class="product__name">Cat Energy PRO 1000 г</h2>
@@ -88,8 +102,11 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/fish-small.png" alt="рыбный корм">
-          </a>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/fish-small.png" srcset="img/fish-small@2x.png 2x" width="68" height="78" alt="рыбный корм">
+            </picture>
+            </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
               <h2 class="product__name">Cat Energy PRO 1000 г</h2>
@@ -113,7 +130,11 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/fish-big.png" alt="рыбный корм большой">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img class="product__img" src="img/fish-big.png" srcset="img/fish-big@2x.png 2x" width="84" height="100" alt="рыбный корм большой">
+            </picture>
           </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
@@ -138,8 +159,11 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/buckwheat-small.png" alt="гречневый корм">
-          </a>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/buckwheat-small.png" srcset="img/buckwheat-small@2x.png 2x" width="68" height="78" alt="гречневый корм">
+            </picture>
+            </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
               <h2 class="product__name">Cat Energy slim 500 г</h2>
@@ -163,7 +187,11 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/buckwheat-big.png" alt="гречневый корм большой">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="product__img" src="img/buckwheat-big.png" srcset="img/buckwheat-big@2x.png 2x" width="84" height="100" alt="гречневый корм большой">
+            </picture>
           </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
@@ -188,7 +216,10 @@
         </article>
         <article class="main-products__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/rice-small.png" alt="рисовый корм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/rice-small.png" srcset="img/rice-small@2x.png 2x" width="68" height="78" alt="рисовый корм">
+            </picture>
           </a>
           <div class="product__wrapper">
             <a class="product__link" href="#">
