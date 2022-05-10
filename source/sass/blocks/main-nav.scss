@@ -6,9 +6,21 @@
 }
 
 .main-nav__logo-wrapper {
+  padding-top: 14px;
+  padding-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-nav__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -18,6 +30,14 @@
   box-shadow: 0 8px 0 0 #000000, 0 -8px 0 0 #000000;
   border: none;
   cursor: pointer;
+}
+
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -128,6 +148,10 @@
     align-items: center;
     position: relative;
     z-index: 2;
+  }
+
+  .main-nav__logo-wrapper {
+    width: 200px;
   }
 
   .main-nav__image {

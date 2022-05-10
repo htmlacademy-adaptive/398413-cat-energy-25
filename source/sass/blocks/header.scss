@@ -1,7 +1,18 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    border-bottom: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .header {
-    position: relative;
     padding-top: 40px;
+    overflow-x: hidden;
   }
 
   .header--main::before {

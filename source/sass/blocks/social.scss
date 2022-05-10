@@ -8,6 +8,10 @@
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
   list-style: none;
 }
 
@@ -16,5 +20,23 @@
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+.social__link {
+  svg {
+    fill: #666666;
+  }
+
+  &:hover {
+    svg {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(104, 183, 56, 0.3);
+    }
   }
 }
