@@ -7,12 +7,26 @@
   padding-bottom: 30px;
   display: block;
   text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     width: 92%;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: auto;
@@ -24,10 +38,12 @@
   .footer__logo {
     align-self: center;
     text-align: left;
+    border-bottom: none;
   }
 
   .footer__social {
     align-self: center;
+    border-bottom: none;
   }
 
   .footer__copyright {
