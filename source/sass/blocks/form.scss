@@ -234,6 +234,7 @@
   width: 21px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 .form__check:hover + .form__label::before {
@@ -426,6 +427,10 @@
     left: 0;
     height: 38px;
     width: 38px;
+  }
+
+  .form__check:checked + .form__label::after {
+    left: 10px;
   }
 
   .form__comment {
