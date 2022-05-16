@@ -32,7 +32,7 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
-.pipe(htmlmin())
+.pipe(htmlmin({ collapseWhitespace: true }))
 .pipe(gulp.dest('build'));
 }
 
@@ -77,7 +77,7 @@ gulp.src(['source/img/*.svg'])
 
 const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
-// .pipe(svgo())
+//.pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
 }))
