@@ -8,7 +8,7 @@
 
 .advantages__title {
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -55,6 +55,10 @@
 
 .advantages__item--easy::after {
   background-image: url("../img/icon-eat.svg");
+}
+
+.advantages__item--goodly br {
+  display: none;
 }
 
 .advantages__item--goodly::after {
@@ -130,6 +134,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .advantages__item--goodly br {
+    display: block;
   }
 }
 
