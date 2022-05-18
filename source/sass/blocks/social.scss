@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: calc(100% - 40px);
-  padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -12,15 +11,12 @@
   margin-bottom: 0;
   padding-top: 18px;
   padding-bottom: 18px;
+  padding-left: 25px;
   list-style: none;
 }
 
 .social__item {
   margin-right: 25px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
 }
 
 .social__link {
