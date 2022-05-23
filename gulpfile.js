@@ -61,7 +61,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 // WebP
 
 const createWebp = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.png'])
 .pipe(squoosh({
 webp: {}
 }))
@@ -71,7 +71,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg'])
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
@@ -90,7 +90,7 @@ inlineSvg: true
 const copy = (done) => {
 gulp.src([
 "source/fonts/**/*.{woff,woff2}",
-'source/*.ico',
+'source/*.ico', 'source/img/favicons/*.png',
 ], {
 base: 'source'
 })
